@@ -1,0 +1,31 @@
+.lang-btn.compact {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    background: white;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.lang-btn.compact:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.flag {
+    font-size: 1.2rem;
+}
+
+.contact-lang {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.language-section {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+}

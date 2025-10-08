@@ -4,7 +4,6 @@ import { TLangDefinition } from '@/types'
 let defaultLang: TLangDefinition = 'en'
 
 export const useLanguage = () => {
-
     const userLang = navigator.language;
     const [lang] = userLang.split('-');
 

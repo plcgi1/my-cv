@@ -1,8 +1,12 @@
 {
   "header": {
-    "title": "John Doe",
+    "title": "Nosau Aliaksandr",
     "subtitle": "Senior Full Stack Developer",
-    "downloadCV": "Download CV"
+    "location": " Minsk, Belarus"
+  },
+  "target": {
+    "title": "Target",
+    "subtitle": "Fast and scalable web services. I strive for clean code, interface aesthetics, and team synergy.."
   },
   "skills": {
     "title": "Technologies & Skills",

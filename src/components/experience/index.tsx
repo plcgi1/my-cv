@@ -1,12 +1,13 @@
 import React from 'react';
-import { Experience as ExperienceType, LanguageStrings } from '../types';
+import { Experience as ExperienceType, LanguageStrings } from '../../types';
+import './index.css'
 
 interface ExperienceProps {
     strings: LanguageStrings;
     experiences: ExperienceType[] | null;
 }
 
-const Experience: React.FC<ExperienceProps> = ({ strings, experiences }) => {
+export const Experience: React.FC<ExperienceProps> = ({ strings, experiences }) => {
     if (!experiences) {
         return (
             <section className="experience-section">
@@ -27,6 +28,14 @@ const Experience: React.FC<ExperienceProps> = ({ strings, experiences }) => {
                         <p className="position">{exp.position}</p>
                         <p className="period">{exp.period}</p>
                         <p className="description">{exp.description}</p>
+                        <p className="responsibilities">
+                            {
+                                exp.responsibilities.map(resp => {
+                                    return <div>{resp}</div>
+                                })
+                            }
+                        </p>
+
                         <div className="technologies">
                             {exp.technologies.map(tech => (
                                 <span key={tech} className="tech-tag">{tech}</span>

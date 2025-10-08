@@ -1,0 +1,34 @@
+.skills-4col {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Фиксирует 25% */
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills-4col div {
+    background: #f9f9f9;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    font-size: 0.95rem;
+    min-width: 0;
+}
+
+/* 🖨️ Адаптация для печати */
+@media print {
+    .skills-4col div {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+}
+
+.skill-name {
+    display: inline-block;
+    margin: 2px;
+    padding: 2px 6px;
+    background: #e9ecef;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
