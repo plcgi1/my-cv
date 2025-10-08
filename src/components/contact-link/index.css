@@ -1,0 +1,55 @@
+.contact-link {
+
+}
+
+.contact-link a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    text-decoration: none;
+    color: var(--text);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.contact-link a:hover {
+    background: #f8f9fa;
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+
+.contact-icon {
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+}
+
+.contact-text {
+    font-size: 0.9rem;
+    font-family: 'Monaco', 'Consolas', monospace;
+}
+
+/* Для email ссылок */
+.contact-link a[href^="mailto:"]:hover {
+    background: #fff3cd;
+    border-color: #ffc107;
+}
+
+/* Для GitHub */
+.contact-link a[href*="github"]:hover {
+    background: #f0f8ff;
+    border-color: #6cc644;
+}
+
+/* Для LinkedIn */
+.contact-link a[href*="linkedin"]:hover {
+    background: #f3f8ff;
+    border-color: #0077b5;
+}
+
+/* Для Telegram */
+.contact-link a[href*="t.me"]:hover {
+    background: #f0f8ff;
+    border-color: #0088cc;
+}
