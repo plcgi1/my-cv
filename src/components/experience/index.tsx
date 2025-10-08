@@ -28,13 +28,26 @@ export const Experience: React.FC<ExperienceProps> = ({ strings, experiences }) 
                         <p className="position">{exp.position}</p>
                         <p className="period">{exp.period}</p>
                         <p className="description">{exp.description}</p>
-                        <p className="responsibilities">
+                        <div className="responsibilities">
                             {
-                                exp.responsibilities.map(resp => {
-                                    return <div>{resp}</div>
+                                exp.responsibilities
+                                    .sort((a,b) => {
+                                        return b.level - a.level
+                                    })
+                                    .map(resp => {
+                                    return <div className="exp-item">
+                                        <span className="exp-name">{resp.name}</span>
+                                        <div className="exp-level">
+                                            <div
+                                                className="exp-level-fill"
+                                                style={{ width: `${resp.level}%` }}
+                                            ></div>
+                                        </div>
+                                        <span className="exp-percent">{resp.level}%</span>
+                                    </div>
                                 })
                             }
-                        </p>
+                        </div>
 
                         <div className="technologies">
                             {exp.technologies.map(tech => (

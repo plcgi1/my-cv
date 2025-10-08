@@ -1,3 +1,11 @@
+.exp-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 /* Experience */
 .experience-item {
   margin-bottom: 2rem;
@@ -47,4 +55,33 @@
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+.exp-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exp-name {
+    font-weight: 600;
+    min-width: 120px;
+}
+
+.exp-level {
+    flex-grow: 1;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    margin-left: 1rem;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.exp-level-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 4px;
+    transition: width 0.5s ease;
 }

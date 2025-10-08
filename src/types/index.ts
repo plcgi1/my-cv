@@ -11,7 +11,7 @@ export interface Experience {
     position: string;
     period: string;
     description: string;
-    responsibilities: string[]
+    responsibilities: Skill[]
     technologies: string[];
 }
 

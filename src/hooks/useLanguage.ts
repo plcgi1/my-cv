@@ -4,10 +4,14 @@ import { TLangDefinition } from '@/types'
 let defaultLang: TLangDefinition = 'en'
 
 export const useLanguage = () => {
+    const savedLanguage = localStorage.getItem('resume-language') as TLangDefinition;
+
     const userLang = navigator.language;
     const [lang] = userLang.split('-');
-
-    if (/en|ru/.test(lang)) {
+    if(savedLanguage) {
+        defaultLang = savedLanguage
+    }
+    else if (/en|ru/.test(lang)) {
         defaultLang = lang as TLangDefinition
     }
 
