@@ -16,4 +16,5 @@ export default defineConfig({
     open: false,
     hot: true
   },
+  base: '/my-cv/',
 })

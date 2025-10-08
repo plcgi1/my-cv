@@ -1,9 +1,9 @@
 {
-  "short_name": "Plcgi1 resume v2",
-  "name": "Plcgi1 resume v2",
+  "short_name": "Plcgi1 CV",
+  "name": "Plcgi1 CV",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

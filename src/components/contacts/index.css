@@ -1,0 +1,48 @@
+.header-3col {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header-4col {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 0.1fr;
+    gap: 1.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name h1 {
+    font-size: 2rem;
+    color: var(--accent);
+    margin: 0;
+}
+
+.name p {
+    font-size: 1rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+}
+
+.contact p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin: 0.2rem 0;
+}
+

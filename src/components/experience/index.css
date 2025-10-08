@@ -1,0 +1,106 @@
+.experience-section h3 {
+    font-size: 1.2rem;
+}
+
+.exp-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.exp-2col div {
+    border-radius: 6px;
+    font-size: 0.92rem;
+    width: 100%;
+}
+
+.exp-3col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Experience */
+.experience-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.company {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.position {
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.period {
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  line-height: 1.6;
+}
+
+/*!* Experience technologies *!*/
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    background: #667eea;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.exp-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exp-name {
+    font-weight: 600;
+    min-width: 120px;
+}
+
+.exp-level {
+    flex-grow: 1;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    margin-left: 1rem;
+    overflow: hidden;
+    margin-right: 10px;
+    width: 50%
+}
+
+.exp-level-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}

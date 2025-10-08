@@ -1,45 +1,19 @@
-import React from 'react';
+// import React from 'react';
 import './App.css';
 import { useLanguage } from './hooks/useLanguage';
 import { useResumeData } from './hooks/useResumeData';
-import Header from './components/Header';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
+import { Skills } from './components/skills';
 import enStrings from './locales/en.json';
 import ruStrings from './locales/ru.json';
-import { LanguageStrings } from './types';
-import { Layout } from 'antd';
-import {MySider } from './components/Sider'
-
-const { Sider } = Layout;
-
-
-const siderStyle: React.CSSProperties = {
-    // textAlign: 'center',
-    // lineHeight: '120px',
-    color: '#fff',
-    backgroundColor: '#1677ff',
-    overflow: 'auto',
-    height: '100vh',
-    position: 'sticky',
-    insetInlineStart: 0,
-    top: 0,
-    bottom: 0,
-    scrollbarWidth: 'thin',
-    scrollbarGutter: 'stable',
-};
+// import { LanguageStrings } from './types';
+import {Contacts} from "./components/contacts";
+import {Target} from "./components/target";
+import {Experience} from './components/experience'
 
 function App() {
     const { language, toggleLanguage } = useLanguage();
     const { skills, experience, error } = useResumeData(language);
-
-    const strings: LanguageStrings = language === 'en' ? enStrings : ruStrings;
-
-    const contactInfo = {
-        email: language === 'en' ? 'john.doe@email.com' : 'ivan.ivanov@email.com',
-        phone: language === 'en' ? '+1 (555) 123-4567' : '+7 (999) 123-45-67',
-        location: language === 'en' ? 'New York, USA' : 'Москва, Россия'
-    };
+    const strings = language === 'en' ? enStrings : ruStrings
 
     if (error) {
         return (
@@ -53,39 +27,21 @@ function App() {
     }
 
     return (
-        <Layout>
-            <Sider width="25%" style={siderStyle}>
-                <MySider strings={strings} skills={skills}></MySider>
-            </Sider>
-            <Layout>
-                <Header
-                    strings={strings}
-                    onLanguageToggle={toggleLanguage}
-                    currentLanguage={language}
-                />
 
-                <div className="container">
-                    <Skills
-                        strings={strings}
-                        skills={skills}
-                    />
-
-                    <Experience
-                        strings={strings}
-                        experiences={experience}
-                    />
-
-                    <section className="contact-section">
-                        <h2>{strings.contact.title}</h2>
-                        <div className="contact-info">
-                            <p>📧 {contactInfo.email}</p>
-                            <p>📞 {contactInfo.phone}</p>
-                            <p>📍 {contactInfo.location}</p>
-                        </div>
-                    </section>
-                </div>
-            </Layout>
-        </Layout>
+        <div>
+            <section>
+                <Contacts strings={strings} toggleLanguage={toggleLanguage} lang={language}></Contacts>
+            </section>
+            <section>
+                <Target strings={strings}></Target>
+            </section>
+            <section>
+                <Skills strings={strings} skills={skills}></Skills>
+            </section>
+            <section className="experience-section">
+                <Experience strings={strings} experiences={experience}></Experience>
+            </section>
+        </div>
     );
 }
 

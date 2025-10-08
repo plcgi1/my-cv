@@ -11,6 +11,7 @@ export interface Experience {
     position: string;
     period: string;
     description: string;
+    responsibilities: Skill[]
     technologies: string[];
 }
 
@@ -25,8 +26,12 @@ export interface LanguageStrings {
     header: {
         title: string;
         subtitle: string;
-        downloadCV: string;
+        location: string;
     };
+    target: {
+        title: string;
+        subtitle: string[];
+    }
     skills: {
         title: string;
         categories: {
@@ -39,10 +44,5 @@ export interface LanguageStrings {
     experience: {
         title: string;
     };
-    contact: {
-        title: string;
-        email: string;
-        phone: string;
-        location: string;
-    };
+
 }

@@ -1,14 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume App</title>
-    <meta name="description" content="Professional Resume - Full Stack Developer">
+    <title>Резюме — Носов Александр</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #007acc;
+            --muted: #666666;
+            --border: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--accent);
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.3rem;
+            margin-top: 2rem;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .photo {
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--accent);
+        }
+
+        .info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .contact {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin-top: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .project-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                color: #000;
+                background: #fff;
+            }
+
+            .photo img {
+                border: none;
+            }
+
+            h2 {
+                border: none;
+            }
+        }
+        .header-3col {
+            display: grid;
+            grid-template-columns: 150px 1fr 1fr;
+            gap: 1.5rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .photo img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--accent);
+        }
+
+        .name h1 {
+            font-size: 2rem;
+            color: var(--accent);
+            margin: 0;
+        }
+
+        .name p {
+            font-size: 1rem;
+            color: var(--muted);
+            margin-top: 0.5rem;
+        }
+
+        .contact p {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin: 0.2rem 0;
+        }
+
+        /* 🖨️ Адаптация для печати */
+        @media print {
+            .header-3col {
+                grid-template-columns: 120px 1fr 1fr;
+                gap: 1rem;
+            }
+
+            .photo img {
+                border: none;
+            }
+        }
+        .skills-4col {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skills-4col div {
+            background: #f9f9f9;
+            padding: 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        /* 🖨️ Адаптация для печати */
+        @media print {
+            .skills-4col div {
+                background: none;
+                border: none;
+                padding: 0;
+            }
+        }
+
+    </style>
 </head>
 <body>
-<div id="root"></div>
-<script type="module" src="/src/index.tsx"></script>
+<div class="header-3col">
+    <div class="col photo">
+        <img src="/images/avatars/ava.png" alt="Носов Александр" />
+    </div>
+    <div class="col name">
+        <h1>Носов Александр</h1>
+        <p>Веб-разработчик | Москва</p>
+    </div>
+    <div class="col contact">
+        <div class="col contact">
+            <p>📧 plcgi1@gmail.com</p>
+            <p>🌐 TODO - поменять</p>
+            <p>💼 github.com/plcgi1</p>
+            <p>🔗 linkedin.com/in/alex-nosoff-b768b717</p>
+            <p>✈️ telegram.me/plcgi1</p>
+            <p>🟣 teams.microsoft.com/ваш_профиль</p>
+        </div>
+
+    </div>
+</div>
+
+<section>
+    <h2>Цель</h2>
+    <p>Создание быстрых, удобных и масштабируемых веб-приложений. Стремлюсь к чистому коду, эстетике интерфейса и командной синергии.</p>
+</section>
+
+<section>
+    <h2>Навыки</h2>
+    <div class="skills-4col">
+        <div><strong>Frontend:</strong><br />HTML, CSS, JS, React, Vue, Next.js</div>
+        <div><strong>Backend:</strong><br />Node.js, Express, MongoDB, PostgreSQL</div>
+        <div><strong>DevOps:</strong><br />Docker, Git, CI/CD, Firebase</div>
+        <div><strong>UI/UX & Тесты:</strong><br />Figma, Tailwind, MUI, Jest, Cypress</div>
+    </div>
+</section>
+
+
+<section>
+    <h2>Опыт работы</h2>
+    <p><strong>Ведущий веб-разработчик</strong> — ООО «ТехАгро», Москва (2022–н.в.)<br />
+        Разработка платформы для аграрных событий, оптимизация SSR и UX, руководство командой.</p>
+
+    <p><strong>Frontend-разработчик</strong> — PixelCraft, Москва (2020–2022)<br />
+        Создание SPA и лендингов, внедрение дизайн-систем, работа с SEO и адаптивностью.</p>
+</section>
+
+<section>
+    <h2>Проекты</h2>
+    <ul class="project-list">
+        <li><strong>AgroTrack</strong> — платформа для отслеживания событий в животноводстве</li>
+        <li><strong>VetIcons</strong> — SVG-библиотека иконок для ветеринарных приложений</li>
+        <li><strong>DevFlow</strong> — расширение для VS Code, автоматизирующее UI-интеграцию</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Языки</h2>
+    <p>Русский — родной | Английский — B2–C1</p>
+</section>
 </body>
 </html>
