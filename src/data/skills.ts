@@ -19,14 +19,14 @@ export const skills = {
     { "name": "Golang", "level": 65 },
     { "name": "REST", "level": 65 },
     { "name": "Kafka", "level": 65 },
-
+    { "name": "Microservices", "level": 65 },
   ],
   "tools": [
     { "name": "Docker", "level": 80 },
     { "name": "Git", "level": 90 },
     { "name": "AWS", "level": 70 },
     { "name": "CI / CD", "level": 75 },
-    { "name": "Sentry integration", "level": 80 },
+    { "name": "API integration", "level": 80 },
     { "name": "Problem resolving", "level": 80 },
     { "name": "PlantUML", "level": 80 }
   ],

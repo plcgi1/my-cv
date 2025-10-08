@@ -1,7 +1,7 @@
 export const experience = [
   {
     company: "Molochko.tech",
-    position: "Lead Senior Full Stack Developer",
+    position: "Старший разработчик",
     period: "2023 - Настоящее время",
     description: "Хобби проект - связанный с управлением стадом",
     responsibilities: [
@@ -16,6 +16,10 @@ export const experience = [
       {
         name: 'Серверная разработка',
         level: 100
+      },
+      {
+        name: 'DevOPS',
+        level: 80
       },
       {
         name: 'Фронтенд разработка',
@@ -41,7 +45,7 @@ export const experience = [
     company: "Dreamsoft",
     position: "Старший разработчик, Серверная разработка",
     period: "09.2024 - Настоящее время",
-    description: "СРО сервисы  - приложение для управления банкротством физлиц",
+    description: "СРО сервисы для управления банкротством физлиц.С нуля до продакшна",
     technologies: ["Nodejs", "Typescript", "Golang", "Expressjs", "Microservices", "Sequelize", "Kafka", "OpenAPI","plantUML"],
     responsibilities: [
       {
@@ -69,8 +73,8 @@ export const experience = [
   {
     company: "Protofire",
     position: "Серверная разработка",
-    period: "03.20224 - 06.2024",
-    description: "Airdrop Bot для блокчайн сети Flare",
+    period: "03.2024 - 06.2024",
+    description: "Airdrop Bot для блокчейн сети Flare",
     technologies: ["subsquid", "docker", "postgres", "typeorm", "typescript", "unit-tests", "plantUML", "AWS"],
     responsibilities: [
       {
@@ -82,15 +86,23 @@ export const experience = [
         level: 70
       },
       {
+        name: 'Взаимодействие со смартконтрактами',
+        level: 100
+      },
+      {
         name: 'Серверная разработка',
         level: 100
+      },
+      {
+        name: 'DevOPS',
+        level: 80
       },
     ],
   },
   {
     company: "Protofire",
     position: "Серверная разработка",
-    period: "01.20224 - 05.2024",
+    period: "01.2024 - 05.2024",
     description: "Оракулы для проекта DIA(USA).Интеграция с блокчейн сетями: stellar, alephium. ",
     technologies: ["golang", "docker", "influxdb", "minicube", "github", "plantUML"],
     responsibilities: [
@@ -103,7 +115,7 @@ export const experience = [
   {
     company: "Protofire",
     position: "Серверная разработка",
-    period: "01.20224 - 05.2024",
+    period: "01.2024 - 05.2024",
     description: "Стартап - блокчейн сеть - w3inscriptions",
     technologies: ["nodejs", "docker", "fastify", "typescript", "github", "plantUML", "AWS"],
     responsibilities: [
@@ -143,7 +155,7 @@ export const experience = [
     position: "Серверная разработка",
     period: "01.2022 - 01.2023",
     description: "Интеграции со slack - периодические кратковременные задачи",
-    technologies: ["nodejs", "AWS lambda", "filecoin", "AWS"],
+    technologies: ["nodejs", "AWS lambda", "filecoin", "AWS", "slackAPI"],
     responsibilities: [
       {
         name: 'Серверная разработка',
@@ -152,7 +164,7 @@ export const experience = [
       {
         name: 'Интеграция',
         level: 100
-      }
+      },
     ],
   },
   {
@@ -160,7 +172,7 @@ export const experience = [
     position: "Полный цикл разработки",
     period: "01.2021 - 01.2023",
     description: "Filecoin сеть - https://filecoin.tools",
-    technologies: ["nodejs", "docker", "fastify", "typescript", "react", "github", "plantUML", "AWS"],
+    technologies: ["filecoin","nodejs", "docker", "fastify", "typescript", "react", "github", "plantUML", "AWS"],
     responsibilities: [
       {
         name: 'Серверная разработка',

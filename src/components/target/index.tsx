@@ -10,7 +10,9 @@ export const Target: React.FC<TargetProps> = ({ strings }) => {
     return (
         <React.Fragment>
         <h2>{strings.target.title}</h2>
-        <p>{strings.target.subtitle}</p>
+            {strings.target.subtitle.map(sub => {
+                return <div>{sub}</div>
+            })}
         </React.Fragment>
     )
 }

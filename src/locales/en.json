@@ -6,7 +6,10 @@
   },
   "target": {
     "title": "Target",
-    "subtitle": "Fast and scalable web services. I strive for clean code, interface aesthetics, and team synergy.."
+    "subtitle": [
+      "Code that scales. Interfaces that work.",
+      "Designed with tomorrow in mind"
+    ]
   },
   "skills": {
     "title": "Technologies & Skills",

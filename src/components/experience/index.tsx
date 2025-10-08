@@ -24,36 +24,42 @@ export const Experience: React.FC<ExperienceProps> = ({ strings, experiences }) 
             <div className="experiences-list">
                 {experiences.map((exp, index) => (
                     <div key={index} className="experience-item">
-                        <h3 className="company">{exp.company}</h3>
-                        <p className="position">{exp.position}</p>
-                        <p className="period">{exp.period}</p>
+                        <div className="exp-3col">
+                            <p className="period">{exp.period}</p>
+                            <h3 className="company">{exp.company}</h3>
+                            <p className="position">{exp.position}</p>
+                        </div>
                         <p className="description">{exp.description}</p>
-                        <div className="responsibilities">
-                            {
-                                exp.responsibilities
-                                    .sort((a,b) => {
-                                        return b.level - a.level
-                                    })
-                                    .map(resp => {
-                                    return <div className="exp-item">
-                                        <span className="exp-name">{resp.name}</span>
-                                        <div className="exp-level">
-                                            <div
-                                                className="exp-level-fill"
-                                                style={{ width: `${resp.level}%` }}
-                                            ></div>
-                                        </div>
-                                        <span className="exp-percent">{resp.level}%</span>
-                                    </div>
-                                })
-                            }
+                        <div className="exp-2col">
+                            <div className="responsibilities">
+                                {
+                                    exp.responsibilities
+                                        .sort((a,b) => {
+                                            return b.level - a.level
+                                        })
+                                        .map(resp => {
+                                            return <div className="exp-item exp-2col">
+
+                                                <div className="exp-name">{resp.name}</div>
+                                                <div className="exp-level">
+                                                    <div
+                                                        className="exp-level-fill"
+                                                        style={{ width: `${resp.level}%` }}
+                                                    ></div>
+                                                </div>
+                                                <span className="exp-percent">{resp.level}%</span>
+                                            </div>
+                                        })
+                                }
+                            </div>
+
+                            <div className="technologies">
+                                {exp.technologies.map(tech => (
+                                    <span key={tech} className="tech-tag">{tech}</span>
+                                ))}
+                            </div>
                         </div>
 
-                        <div className="technologies">
-                            {exp.technologies.map(tech => (
-                                <span key={tech} className="tech-tag">{tech}</span>
-                            ))}
-                        </div>
                     </div>
                 ))}
             </div>

@@ -30,7 +30,7 @@ export interface LanguageStrings {
     };
     target: {
         title: string;
-        subtitle: string;
+        subtitle: string[];
     }
     skills: {
         title: string;

@@ -1,7 +1,7 @@
 export const experience = [
   {
     company: "Molochko.tech",
-    position: "Lead Senior Full Stack Developer",
+    position: "Lead FullStack Developer",
     period: "2023 - Present",
     description: "My pet project, related to Cattle management - livestock farming",
     responsibilities: [
@@ -12,6 +12,10 @@ export const experience = [
       {
         name: 'Architecture design',
         level: 70
+      },
+      {
+        name: 'DevOPS',
+        level: 80
       },
       {
         name: 'Backend development',
@@ -41,7 +45,7 @@ export const experience = [
     company: "Dreamsoft",
     position: "Team lead, Backend Developer",
     period: "09.2024 - Present",
-    description: "SRO software  - application for managing bankruptcy of individuals",
+    description: "SRO services for managing bankruptcy of individuals.From zero to production.",
     technologies: ["Nodejs", "Typescript", "Golang", "Expressjs", "Microservices", "Sequelize", "Kafka", "OpenAPI","plantUML"],
     responsibilities: [
       {
@@ -69,8 +73,8 @@ export const experience = [
   {
     company: "Protofire",
     position: "Backend Developer",
-    period: "03.20224 - 06.2024",
-    description: "Airdrop Bot for Flare Network ",
+    period: "03.2024 - 06.2024",
+    description: "Airdrop Bot for Flare Network",
     technologies: ["subsquid", "docker", "postgres", "typeorm", "typescript", "unit-tests", "plantUML", "AWS"],
     responsibilities: [
       {
@@ -85,12 +89,16 @@ export const experience = [
         name: 'Backend development',
         level: 100
       },
+      {
+        name: 'DevOPS',
+        level: 80
+      },
     ],
   },
   {
     company: "Protofire",
     position: "Backend Developer",
-    period: "01.20224 - 05.2024",
+    period: "01.2024 - 05.2024",
     description: "Oracles for DIA(USA).Integration with blockhain networks: stellar, alephium. ",
     technologies: ["golang", "docker", "influxdb", "minicube", "github", "plantUML"],
     responsibilities: [
@@ -103,8 +111,8 @@ export const experience = [
   {
     company: "Protofire",
     position: "Backend Developer",
-    period: "01.20224 - 05.2024",
-    description: "Blockchain network - w3inscriptions",
+    period: "01.2024 - 05.2024",
+    description: "Blockchain network - w3inscriptions.",
     technologies: ["nodejs", "docker", "fastify", "typescript", "github", "plantUML", "AWS"],
     responsibilities: [
       {
@@ -113,6 +121,10 @@ export const experience = [
       },
       {
         name: 'Expansion of functionality',
+        level: 100
+      },
+      {
+        name: 'Interaction with smart contracts',
         level: 100
       },
       {
@@ -143,7 +155,7 @@ export const experience = [
     position: "Backend Developer",
     period: "01.2022 - 01.2023",
     description: "Slack integration - periodical short time tasks",
-    technologies: ["nodejs", "AWS lambda", "filecoin", "AWS"],
+    technologies: ["nodejs", "AWS lambda", "filecoin", "AWS", "slackAPI"],
     responsibilities: [
       {
         name: 'Backend development',
@@ -160,7 +172,7 @@ export const experience = [
     position: "Full stack Developer",
     period: "01.2021 - 01.2023",
     description: "Filecoin network - https://filecoin.tools",
-    technologies: ["nodejs", "docker", "fastify", "typescript", "react", "github", "plantUML", "AWS"],
+    technologies: ["filecoin","nodejs", "docker", "fastify", "typescript", "react", "github", "plantUML", "AWS"],
     responsibilities: [
       {
         name: 'Backend development',
