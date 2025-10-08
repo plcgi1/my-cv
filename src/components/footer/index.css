@@ -1,0 +1,104 @@
+.footer {
+    margin-top: auto; /* Для sticky footer */
+}
+
+.footer-default {
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 2rem 0;
+}
+
+.footer-minimal {
+    background: white;
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 0;
+}
+
+.footer-dark {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-main p {
+    margin: 0;
+    color: inherit;
+    font-size: 0.9rem;
+}
+
+.footer-badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tech-badge {
+    background: #667eea;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.footer-actions {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.footer-btn {
+    background: transparent;
+    border: 1px solid #667eea;
+    color: #667eea;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-main {
+        justify-content: center;
+    }
+}
+
+/* Для sticky footer */
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}

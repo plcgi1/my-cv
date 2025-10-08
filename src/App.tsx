@@ -5,10 +5,10 @@ import { useResumeData } from './hooks/useResumeData';
 import { Skills } from './components/skills';
 import enStrings from './locales/en.json';
 import ruStrings from './locales/ru.json';
-// import { LanguageStrings } from './types';
 import {Contacts} from "./components/contacts";
 import {Target} from "./components/target";
 import {Experience} from './components/experience'
+import { Footer } from './components/footer'
 
 function App() {
     const { language, toggleLanguage } = useLanguage();
@@ -41,6 +41,7 @@ function App() {
             <section className="experience-section">
                 <Experience strings={strings} experiences={experience}></Experience>
             </section>
+            <Footer variant="default" showLinks={true} />
         </div>
     );
 }
