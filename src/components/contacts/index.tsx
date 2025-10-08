@@ -13,7 +13,7 @@ export const Contacts: React.FC<ContactsProps> = ({ lang, strings, toggleLanguag
     return (
 <div className="header-4col">
     <div className="col photo">
-        <img src="/images/avatars/ava.png" alt="Носов Александр" />
+        <img src="images/avatars/ava.png" alt="Носов Александр" />
         
     </div>
     <div className="col name">
