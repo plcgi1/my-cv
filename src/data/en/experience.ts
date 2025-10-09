@@ -75,7 +75,7 @@ export const experience = [
     position: "Backend Developer",
     period: "03.2024 - 06.2024",
     description: "Airdrop Bot for Flare Network",
-    technologies: ["subsquid", "docker", "postgres", "typeorm", "typescript", "unit-tests", "plantUML", "AWS"],
+    technologies: ["subsquid", "docker", "postgres", "typeorm", "typescript", "unit-tests", "plantUML", "AWS","blockchain"],
     responsibilities: [
       {
         name: 'Business analitycs',
@@ -100,7 +100,7 @@ export const experience = [
     position: "Backend Developer",
     period: "01.2024 - 05.2024",
     description: "Oracles for DIA(USA).Integration with blockhain networks: stellar, alephium. ",
-    technologies: ["golang", "docker", "influxdb", "minicube", "github", "plantUML"],
+    technologies: ["golang", "docker", "influxdb", "minicube", "github", "plantUML", "blockchain"],
     responsibilities: [
       {
         name: 'Backend development',
@@ -113,7 +113,7 @@ export const experience = [
     position: "Backend Developer",
     period: "01.2024 - 05.2024",
     description: "Blockchain network - w3inscriptions.",
-    technologies: ["nodejs", "docker", "fastify", "typescript", "github", "plantUML", "AWS"],
+    technologies: ["nodejs", "docker", "fastify", "typescript", "github", "plantUML", "AWS", "blockchain"],
     responsibilities: [
       {
         name: 'Backend development',
@@ -206,7 +206,7 @@ export const experience = [
     position: "Full stack Developer",
     period: "08.2020 - 08.2023",
     description: "EURST to EUR exchange system - https://wallex.io",
-    technologies: ["nodejs", "docker", "fastify", "typescript", "react", "github", "plantUML", "nginx", "digital ocean"],
+    technologies: ["nodejs", "docker", "fastify", "typescript", "react", "github", "plantUML", "nginx", "digital ocean", "blockchain"],
     responsibilities: [
       {
         name: 'Architecture design',
