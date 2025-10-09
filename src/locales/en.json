@@ -28,5 +28,9 @@
     "email": "john.doe@email.com",
     "phone": "+1 (555) 123-4567",
     "location": "New York, USA"
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "printVersion": "Print version"
   }
 }

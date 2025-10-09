@@ -38,7 +38,7 @@ export const Experience: React.FC<ExperienceProps> = ({ strings, experiences }) 
                                             return b.level - a.level
                                         })
                                         .map(resp => {
-                                            return <div className="exp-item exp-2col">
+                                            return <div key={`exp-${resp.name}`} className="exp-item exp-2col">
 
                                                 <div className="exp-name">{resp.name}</div>
                                                 <div className="exp-level">

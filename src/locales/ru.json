@@ -28,5 +28,9 @@
     "email": "ivan.ivanov@email.com",
     "phone": "+7 (999) 123-45-67",
     "location": "Москва, Россия"
+  },
+  "footer": {
+    "copyright": "Все права защищены",
+    "printVersion": "Версия для печати"
   }
 }

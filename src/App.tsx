@@ -41,7 +41,7 @@ function App() {
             <section className="experience-section">
                 <Experience strings={strings} experiences={experience}></Experience>
             </section>
-            <Footer variant="default" showLinks={true} />
+            <Footer strings={strings} />
         </div>
     );
 }
