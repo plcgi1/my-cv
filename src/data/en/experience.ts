@@ -25,8 +25,14 @@ export const experience = [
         name: 'Frontend development',
         level: 10
       },
+      {
+        name: 'AI integration',
+        level: 60
+      },
     ],
     technologies: [
+      'ollama',
+      'AI agent',
         "Angular",
       "TypeScript",
       "Node.js",
@@ -38,7 +44,7 @@ export const experience = [
       "Microservices",
         "Docker",
         "PlantUML",
-      "nginx"
+      "nginx",
     ]
   },
   {
