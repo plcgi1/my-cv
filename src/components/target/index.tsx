@@ -11,7 +11,7 @@ export const Target: React.FC<TargetProps> = ({ strings }) => {
         <React.Fragment>
         <h2>{strings.target.title}</h2>
             {strings.target.subtitle.map(sub => {
-                return <div>{sub}</div>
+                return <div key={sub}>{sub}</div>
             })}
         </React.Fragment>
     )

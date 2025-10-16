@@ -9,6 +9,8 @@ export const skills = {
   ],
   "backend": [
     { "name": "Node.js", "level": 85 },
+    { "name": "Ollama API", "level": 85 },
+    { "name": "AI integration", "level": 85 },
     { "name": "Expressjs", "level": 85 },
     { "name": "Fastify", "level": 85 },
     { "name": "Nestjs", "level": 85 },

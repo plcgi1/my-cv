@@ -45,8 +45,6 @@ export const experience = [
       "Docker",
       "PlantUML",
       "nginx",
-        'ollama',
-        'AI'
     ]
   },
   {

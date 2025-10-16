@@ -44,5 +44,9 @@ export interface LanguageStrings {
     experience: {
         title: string;
     };
+    footer: {
+        copyright: string
+        printVersion: string
+    }
 
 }

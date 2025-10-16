@@ -29,13 +29,7 @@ export const Contacts: React.FC<ContactsProps> = ({ lang, strings, toggleLanguag
                 text="plcgi1"
             />
         </p>
-        <p>
-            <ContactLink
-                href="https://plcgi1.github.io/my-cv/"
-                icon="🌐"
-                text="plcgi1.github.io/my-cv"
-            />
-        </p>
+
         <p>
             <ContactLink
                 href="https://github.com/plcgi1"
