@@ -26,6 +26,8 @@ export const skills = {
   "tools": [
     { "name": "Docker", "level": 80 },
     { "name": "Git", "level": 90 },
+    { "name": "Github CI/CD", "level": 90 },
+    { "name": "Bitbucket CI/CD", "level": 90 },
     { "name": "AWS", "level": 70 },
     { "name": "CI / CD", "level": 75 },
     { "name": "API integration", "level": 80 },
