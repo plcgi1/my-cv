@@ -9,6 +9,8 @@ export const skills = {
   ],
   "backend": [
     { "name": "Node.js", "level": 85 },
+    { "name": "Ollama API", "level": 85 },
+    { "name": "AI integration", "level": 85 },
     { "name": "Expressjs", "level": 85 },
     { "name": "Fastify", "level": 85 },
     { "name": "Nestjs", "level": 85 },
@@ -24,6 +26,8 @@ export const skills = {
   "tools": [
     { "name": "Docker", "level": 80 },
     { "name": "Git", "level": 90 },
+    { "name": "Github CI/CD", "level": 90 },
+    { "name": "Bitbucket CI/CD", "level": 90 },
     { "name": "AWS", "level": 70 },
     { "name": "CI / CD", "level": 75 },
     { "name": "API integration", "level": 80 },
