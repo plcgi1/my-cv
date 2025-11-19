@@ -36,6 +36,8 @@ export const experience = [
       "OpenAPI",
       "Swagger",
       "Microservices",
+        'AI',
+        'Ollama API',
         "Docker",
         "PlantUML",
       "nginx"

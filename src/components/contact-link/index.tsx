@@ -1,9 +1,10 @@
 import React from 'react';
 import './index.css'
+import { SocialIcon } from 'react-social-icons'
 
 interface ContactLinkProps {
     href: string;
-    icon: string;
+    icon: SocialIcon;
     text: string;
     isExternal?: boolean;
 }
@@ -21,7 +22,7 @@ const ContactLink: React.FC<ContactLinkProps> = ({
                 target={isExternal ? "_blank" : undefined}
                 rel={isExternal ? "noopener noreferrer" : undefined}
             >
-                <span className="contact-icon">{icon}</span>
+                {icon}
                 <span className="contact-text">{text}</span>
             </a>
         </div>

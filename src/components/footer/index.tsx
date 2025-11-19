@@ -3,6 +3,7 @@ import ContactLink from '../contact-link'
 import './index.css';
 import * as p from '../../../package.json'
 import { LanguageStrings } from '../..//types'
+import { SocialIcon } from 'react-social-icons'
 
 interface FooterProps {
     strings: LanguageStrings;
@@ -21,9 +22,15 @@ export const Footer: React.FC<FooterProps> = ({ strings }) => {
                 </div>
                 <div>
                     <ContactLink
-                        href="https://plcgi1.github.io/my-cv/"
-                        icon="🌐"
-                        text="plcgi1.github.io/my-cv"
+                        href="https://github.com/plcgi1"
+                        icon={
+                            <SocialIcon
+                                as={'div'}
+                                network='github'
+                                borderRadius='0'
+                            />
+                        }
+                        text={'github.com/plcgi1'}
                     />
                 </div>
                 {p.version}

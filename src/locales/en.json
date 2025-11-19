@@ -2,13 +2,16 @@
   "header": {
     "title": "Nosau Aliaksandr",
     "subtitle": "Senior Full Stack Developer",
-    "location": " Minsk, Belarus"
+    "location": " Minsk, Belarus",
+    "phone": "Phone"
   },
   "target": {
-    "title": "Target",
+    "title": "About me",
     "subtitle": [
-      "Code that scales. Interfaces that work.",
-      "Designed with tomorrow in mind"
+      "In IT development since 2007. I've had it all: successes and failures.",
+      "I am responsible for the reliability of both my decisions and the reliability of the team I work with.",
+      "When it was necessary to take over the leadership of the team, I worked with the team",
+      "Main last technologies - nodejs, typescript, fastify, microservices, postgres, golang, sequelize, nestjs"
     ]
   },
   "skills": {

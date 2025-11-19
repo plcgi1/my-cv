@@ -38,6 +38,8 @@ export const experience = [
             'Microservices',
             'Docker',
             'PlantUML',
+            'AI',
+            'Ollama API',
             'nginx'
         ]
     },
