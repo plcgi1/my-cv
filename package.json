@@ -1,6 +1,6 @@
 {
   "name": "resume-app",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -8,7 +8,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
-    "predeploy": "npm run patch-version && npm run build",
+    "predeploy": "npm run patch-version",
     "patch-version": "npm version patch --no-git-tag-version"
   },
   "dependencies": {
