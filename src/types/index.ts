@@ -27,6 +27,7 @@ export interface LanguageStrings {
         title: string;
         subtitle: string;
         location: string;
+        phone: string;
     };
     target: {
         title: string;

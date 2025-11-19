@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactElement } from 'react'
 import './index.css'
-import { SocialIcon } from 'react-social-icons'
+// import { SocialIcon } from 'react-social-icons'
 
 interface ContactLinkProps {
     href: string;
-    icon: SocialIcon;
+    icon: ReactElement;
     text: string;
     isExternal?: boolean;
 }

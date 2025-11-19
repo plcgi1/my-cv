@@ -20,8 +20,8 @@ export const Contacts: React.FC<ContactsProps> = ({ lang, strings, toggleLanguag
     <div className="col name">
         <h1>{strings.header.title}</h1>
         <p>
-            {strings.header.subtitle} |
-            {strings.header.location} |
+            {strings.header.subtitle} |&nbsp;
+            {strings.header.location} |&nbsp;
             {strings.header.phone}: +375 (28) 7537947
         </p>
         <p>
