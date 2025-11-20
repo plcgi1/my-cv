@@ -27,20 +27,20 @@ export const experience = [
             }
         ],
         technologies: [
-            'Angular',
-            'TypeScript',
-            'Node.js',
-            'PostgreSQL',
-            'Fastify',
-            'Sequelize',
-            'OpenAPI',
-            'Swagger',
-            'Microservices',
-            'Docker',
-            'PlantUML',
-            'AI',
             'Ollama API',
-            'nginx'
+            'AI agent',
+            "Angular",
+            "TypeScript",
+            "Node.js",
+            "PostgreSQL",
+            "Fastify",
+            "Sequelize",
+            "OpenAPI",
+            "Swagger",
+            "Microservices",
+            "Docker",
+            "PlantUML",
+            "nginx",
         ]
     },
     {

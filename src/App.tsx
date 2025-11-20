@@ -9,6 +9,7 @@ import {Contacts} from "./components/contacts";
 import {Target} from "./components/target";
 import {Experience} from './components/experience'
 import { Footer } from './components/footer'
+import {LangSwitcher} from "./components/lang-switcher";
 
 function App() {
     const { language, toggleLanguage } = useLanguage();
@@ -30,7 +31,10 @@ function App() {
 
         <div>
             <section>
-                <Contacts strings={strings} toggleLanguage={toggleLanguage} lang={language}></Contacts>
+                <LangSwitcher lang={language} toggleLanguage={toggleLanguage}></LangSwitcher>
+            </section>
+            <section>
+                <Contacts strings={strings}></Contacts>
             </section>
             <section>
                 <Target strings={strings}></Target>

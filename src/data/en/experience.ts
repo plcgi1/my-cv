@@ -31,7 +31,7 @@ export const experience = [
       },
     ],
     technologies: [
-      'ollama',
+        'Ollama API',
       'AI agent',
         "Angular",
       "TypeScript",
@@ -42,8 +42,6 @@ export const experience = [
       "OpenAPI",
       "Swagger",
       "Microservices",
-        'AI',
-        'Ollama API',
         "Docker",
         "PlantUML",
       "nginx",
