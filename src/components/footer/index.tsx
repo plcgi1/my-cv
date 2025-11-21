@@ -11,12 +11,12 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ strings }) => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className={`footer footer-default`}>
+        <footer className={`footer footer-default no-print`}>
             <div className="footer-container">
                 <div className="footer-main">
                     <p>
                         &copy; {currentYear} plcgi1.
-                        {strings.footer.copyright}
+                        {strings.footerCopyright}
                     </p>
 
                 </div>
@@ -39,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({ strings }) => {
                         className="footer-btn"
                         onClick={() => window.print()}
                     >
-                        {strings.footer.printVersion}
+                        {strings.footerPrintVersion}
                     </button>
                 </div>
             </div>

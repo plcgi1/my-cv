@@ -15,11 +15,11 @@ export const Contacts: React.FC<ContactsProps> = ({ strings }) => {
         <img src="images/avatars/ava.png" alt="Носов Александр" />
     </div>
     <div className="col name">
-        <h1>{strings.header.title}</h1>
+        <h1>{strings.headerTitle}</h1>
         <p>
-            {strings.header.subtitle} |&nbsp;
-            {strings.header.location} |&nbsp;
-            {strings.header.phone}: +375 (28) 7537947
+            {strings.headerSubtitle} |&nbsp;
+            {strings.headerLocation} |&nbsp;
+            {strings.headerPhone}: +375 (28) 7537947
         </p>
         <div>
             <ContactLink

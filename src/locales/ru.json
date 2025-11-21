@@ -1,39 +1,28 @@
 {
-  "header": {
-    "title": "Носов Александр",
-    "subtitle": "Senior Full Stack Разработчик",
-    "location": "Минск, Беларусь",
-    "phone": "Телефон"
-  },
-  "target": {
-    "title": "Обо мне",
-    "subtitle": [
-      "В IT разработке с 2007 года. Все было: и успехи, и провалы",
-      "Отвечаю как за надежность своих решений, так и за надежность команды, с которой работаю",
-      "Когда нужно было принимать руководство командой на себя - работал с командой",
-      "Основные последние технологии - nodejs, typescript, fastify, microservices, postgres, golang, sequelize, nestjs"
-    ]
-  },
-  "skills": {
-    "title": "Технологии и Навыки",
-    "categories": {
-      "frontend": "Фронтенд",
-      "backend": "Бэкенд",
-      "tools": "Инструменты и DevOps",
-      "languages": "Языки"
-    }
-  },
-  "experience": {
-    "title": "Опыт работы"
-  },
-  "contact": {
-    "title": "Контактная информация",
-    "email": "ivan.ivanov@email.com",
-    "phone": "+7 (999) 123-45-67",
-    "location": "Москва, Россия"
-  },
-  "footer": {
-    "copyright": "Все права защищены",
-    "printVersion": "Версия для печати"
-  }
+  "headerTitle": "Носов Александр",
+  "headerLocation": "Senior Full Stack Разработчик",
+  "headerPhone": "Минск, Беларусь",
+  "headerSubtitle": "Телефон",
+
+  "targetTitle": "Обо мне",
+  "targetSubtitle": [
+    "В IT разработке с 2007 года. Все было: и успехи, и провалы",
+    "Отвечаю как за надежность своих решений, так и за надежность команды, с которой работаю",
+    "Когда нужно принимать руководство командой на себя - работаю с командой",
+    "Главные интересы: разработка и анализ бизнес-процессов, архитектуры, помощь членам команды",
+    "Любимое правило - \"разобраться конструктивно и сделать конкретику\""
+  ],
+
+  "skillsTitle": "Технологии и Навыки",
+  "skillsCategoriesFE": "Фронтенд",
+  "skillsCategoriesBE": "Бэкенд",
+  "skillsCategoriesTools": "Инструменты и DevOps",
+  "skillsCategoriesLanguages": "Языки",
+
+  "experienceTitle": "Опыт работы",
+  "experienceResponsibilities": "Обязанности и достижения",
+  "experienceTechnologies": "Используемые технологии",
+
+  "footerCopyright": "Все права защищены",
+  "footerPrintVersion": "Версия для печати"
 }

@@ -9,8 +9,8 @@ interface TargetProps {
 export const Target: React.FC<TargetProps> = ({ strings }) => {
     return (
         <React.Fragment>
-        <h2>{strings.target.title}</h2>
-            {strings.target.subtitle.map(sub => {
+        <h2>{strings.targetTitle}</h2>
+            {strings.targetSubtitle.map(sub => {
                 return <div key={sub}>{sub}</div>
             })}
         </React.Fragment>

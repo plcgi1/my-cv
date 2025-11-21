@@ -10,24 +10,24 @@ interface SkillProps {
 export const Skills: React.FC<SkillProps> = ({ strings, skills }) => {
     return (
         <React.Fragment>
-            <h2>{strings.skills.title}</h2>
+            <h2>{strings.skillsTitle}</h2>
             <div className="skills-4col">
                 <div>
-                    <strong>{strings.skills.categories.backend}</strong>
+                    <strong>{strings.skillsCategoriesBE}</strong>
                     <br/>
                     {skills.backend.map((skill, i) => {
                         return <span key={`${skill}-${i}`} className="skill-name">{skill.name}</span>
                     })}
                 </div>
                 <div>
-                    <strong>{strings.skills.categories.frontend}</strong>
+                    <strong>{strings.skillsCategoriesFE}</strong>
                     <br/>
                     {skills.frontend.map((skill,i) => {
                         return <span key={`${skill}-${i}`} className="skill-name">{skill.name}</span>
                     })}
                 </div>
                 <div>
-                    <strong>{strings.skills.categories.tools}</strong>
+                    <strong>{strings.skillsCategoriesTools}</strong>
                     <br/>
                     {skills.tools.map((skill,i) => {
                         return <span key={`${skill}-${i}`} className="skill-name">{skill.name}</span>
@@ -35,7 +35,7 @@ export const Skills: React.FC<SkillProps> = ({ strings, skills }) => {
                 </div>
 
                 <div>
-                    <strong>{strings.skills.categories.languages}</strong>
+                    <strong>{strings.skillsCategoriesLanguages}</strong>
                     <br/>
                     {skills.languages.map((skill,i) => {
                         return <span key={`${skill}-${i}`} className="skill-name">{skill.name}</span>

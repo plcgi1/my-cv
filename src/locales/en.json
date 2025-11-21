@@ -1,39 +1,27 @@
 {
-  "header": {
-    "title": "Nosau Aliaksandr",
-    "subtitle": "Senior Full Stack Developer",
-    "location": " Minsk, Belarus",
-    "phone": "Phone"
-  },
-  "target": {
-    "title": "About me",
-    "subtitle": [
-      "In IT development since 2007. I've had it all: successes and failures.",
-      "I am responsible for the reliability of both my decisions and the reliability of the team I work with.",
-      "When it was necessary to take over the leadership of the team, I worked with the team",
-      "Main last technologies - nodejs, typescript, fastify, microservices, postgres, golang, sequelize, nestjs"
-    ]
-  },
-  "skills": {
-    "title": "Technologies & Skills",
-    "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "tools": "Tools & DevOps",
-      "languages": "Languages"
-    }
-  },
-  "experience": {
-    "title": "Work Experience"
-  },
-  "contact": {
-    "title": "Contact Information",
-    "email": "john.doe@email.com",
-    "phone": "+1 (555) 123-4567",
-    "location": "New York, USA"
-  },
-  "footer": {
-    "copyright": "All rights reserved",
-    "printVersion": "Print version"
-  }
+  "headerTitle": "Nosau Aliaksandr",
+  "headerLocation": "Senior Full Stack Developer",
+  "headerPhone": "Minsk, Belarus",
+  "headerSubtitle": "Phone",
+
+  "targetTitle": "About me",
+  "targetSubtitle": [
+    "In IT development since 2007. I've had it all: successes and failures.",
+    "I am responsible for the reliability of both my decisions and the reliability of the team I work with.",
+    "When it was necessary to take over the leadership of the team, I worked with the team",
+    "My favorite rule is to \"sort things out constructively and get specific.\""
+  ],
+
+  "skillsTitle": "Technologies & Skills",
+  "skillsCategoriesFE": "Frontend",
+  "skillsCategoriesBE": "Backend",
+  "skillsCategoriesTools": "Tools & DevOps",
+  "skillsCategoriesLanguages": "Languages",
+
+  "experienceTitle": "Work Experience",
+  "experienceResponsibilities": "Responsibilities and Achievements",
+  "experienceTechnologies": "Technologies",
+
+  "footerCopyright": "All rights reserved",
+  "footerPrintVersion": "Print version"
 }

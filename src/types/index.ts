@@ -3,14 +3,12 @@ export type TLangDefinition = 'en' | 'ru'
 
 export interface Skill {
     name: string;
-    level: number;
 }
 
 export interface Experience {
     company: string;
     position: string;
     period: string;
-    description: string;
     responsibilities: Skill[]
     technologies: string[];
 }
@@ -23,31 +21,24 @@ export interface SkillsData {
 }
 
 export interface LanguageStrings {
-    header: {
-        title: string;
-        subtitle: string;
-        location: string;
-        phone: string;
-    };
-    target: {
-        title: string;
-        subtitle: string[];
-    }
-    skills: {
-        title: string;
-        categories: {
-            frontend: string;
-            backend: string;
-            tools: string;
-            languages: string;
-        };
-    };
-    experience: {
-        title: string;
-    };
-    footer: {
-        copyright: string
-        printVersion: string
-    }
+    headerTitle: string
+    headerLocation: string
+    headerPhone: string
+    headerSubtitle: string;
 
+    targetTitle: string;
+    targetSubtitle: string[]
+
+    skillsTitle: string
+    skillsCategoriesFE: string
+    skillsCategoriesBE: string
+    skillsCategoriesTools: string
+    skillsCategoriesLanguages: string
+
+    experienceTitle: string
+    experienceResponsibilities: string
+    experienceTechnologies: string
+
+    footerCopyright: string
+    footerPrintVersion: string
 }
