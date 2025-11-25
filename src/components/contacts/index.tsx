@@ -17,9 +17,8 @@ export const Contacts: React.FC<ContactsProps> = ({ strings }) => {
     <div className="col name">
         <h1>{strings.headerTitle}</h1>
         <p>
-            {strings.headerSubtitle} |&nbsp;
             {strings.headerLocation} |&nbsp;
-            {strings.headerPhone}: +375 (28) 7537947
+            {strings.headerPhone}: +375 (29) 7537947
         </p>
         <div>
             <ContactLink
