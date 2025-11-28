@@ -25,6 +25,7 @@ export interface LanguageStrings {
     headerLocation: string
     headerPhone: string
     headerSubtitle: string;
+    headerEmail: string;
 
     targetTitle: string;
     targetSubtitle: string[]
